@@ -103,7 +103,7 @@ function Ship() {
 
         // calculate new pod position 
         oGame.oPod.iPositionX += oGame.oPod.iVectorX;
-        oGame.oPod.iPositionY += oGame.oPod.iVectorY + 0.1;
+        oGame.oPod.iPositionY += oGame.oPod.iVectorY + oGame.oLevel.iGravity;
 
         // calculate push/pull of the rod
         var iDeltaX = (oGame.oPod.iPositionX - this.iPositionX);
